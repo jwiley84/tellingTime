@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Time and Date</title>
+    </head>
+    <body>
+        <h1>The current time and date:</h1>
+        <div style="border: 5px solid black; width:400px">
+            @{ 
+                DateTime date = DateTime.Now;
+
+                string now = date.ToString("MMM d, yyyy");
+                string day = date.ToString("hh:mm tt");
+                // time.ToString("hh:mm tt");
+             }
+            <p>@day</p>
+            <p>@now</p>
+        </div>
+    </body>
+</html>
